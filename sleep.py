@@ -2,6 +2,7 @@ import os
 import sys
 import math
 from random import randint
+from time import sleep
 
 print('\n Starting sleeping routine...\n')
 
@@ -26,3 +27,11 @@ try:
     print('Shutdown scheduled after: [' + str((int(schedule_time/60))) + ' minutes] \n')
 except:
     print('Shutdown schedule faild')
+
+sleep(2)
+print('\nlocking your computer ...')
+try:
+    os.system('rundll32.exe user32.dll,LockWorkStation')
+    print('Locked Successfully')
+except:
+    print('Lock faild')
