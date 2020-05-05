@@ -2,6 +2,7 @@
 this was created by: `Ebrahim Maher`
 - randomly open one quran file of several files in /quran
 - shedule shutdown after specified minutes (in commanc)
+- Lock computer after 2s
  
 # installation
 - clone project
